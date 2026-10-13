@@ -68,9 +68,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="TestCars.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestCars.aspx.cs">
+      <DependentUpon>TestCars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestCars.aspx.designer.cs">
+      <DependentUpon>TestCars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\DatabaseHelper.cs" />
+    <Compile Include="App_Code\CarManager.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
