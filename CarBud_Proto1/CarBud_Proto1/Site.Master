@@ -1,0 +1,42 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="CarBud_Proto1.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CarBud Rentals</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="site-header">
+            <div class="wrap header-inner">
+                <a class="brand" href="Default.aspx">CarBud <span>Rentals</span></a>
+                <nav class="nav">
+                    <a href="Default.aspx">Home</a>
+                    <a href="Cars.aspx">Cars</a>
+                    <asp:PlaceHolder ID="phLoggedIn" runat="server">
+                        <a href="MyBookings.aspx">My bookings</a>
+                        <span class="hello">Hi, <asp:Literal ID="litName" runat="server" /></span>
+                        <a href="Logout.aspx">Log out</a>
+                    </asp:PlaceHolder>
+                    <asp:PlaceHolder ID="phLoggedOut" runat="server">
+                        <a href="Login.aspx">Log in</a>
+                        <a class="btn btn-small" href="Register.aspx">Sign up</a>
+                    </asp:PlaceHolder>
+                </nav>
+            </div>
+        </header>
+
+        <main class="wrap page">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrap">CarBud Rentals &middot; Thesis prototype &middot; Sample data only</div>
+        </footer>
+    </form>
+</body>
+</html>
