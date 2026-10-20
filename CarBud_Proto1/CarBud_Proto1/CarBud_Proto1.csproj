@@ -76,6 +76,8 @@
     <Content Include="Logout.aspx" />
     <Content Include="Cars.aspx" />
     <Content Include="Content\Site.css" />
+    <Content Include="CarDetails.aspx" />
+    <Content Include="MyBookings.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -88,6 +90,20 @@
     </Compile>
     <Compile Include="App_Code\DatabaseHelper.cs" />
     <Compile Include="App_Code\CarManager.cs" />
+    <Compile Include="CarDetails.aspx.cs">
+      <DependentUpon>CarDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarDetails.aspx.designer.cs">
+      <DependentUpon>CarDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyBookings.aspx.cs">
+      <DependentUpon>MyBookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyBookings.aspx.designer.cs">
+      <DependentUpon>MyBookings.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
