@@ -12,6 +12,9 @@ namespace CarBud_Proto1
             {
                 Response.Redirect("Default.aspx");
             }
+
+            // "Create an account" keeps the page the visitor should come back to
+            lnkToRegister.NavigateUrl = CurrentUser.WithReturnUrl("Register.aspx", Request.QueryString["ReturnUrl"]);
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)

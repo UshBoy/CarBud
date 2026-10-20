@@ -16,6 +16,8 @@ namespace CarBud_Proto1
         protected global::System.Web.UI.WebControls.PlaceHolder phLoggedIn;
         protected global::System.Web.UI.WebControls.Literal litName;
         protected global::System.Web.UI.WebControls.PlaceHolder phLoggedOut;
+        protected global::System.Web.UI.WebControls.HyperLink lnkNavLogin;
+        protected global::System.Web.UI.WebControls.HyperLink lnkNavRegister;
         protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
     }
 }

@@ -57,6 +57,16 @@ namespace CarBud_Proto1
             }
         }
 
+        // Builds a link like "Login.aspx?ReturnUrl=..." (or just "Login.aspx" if there is nowhere to return to)
+        public static string WithReturnUrl(string page, string returnUrl)
+        {
+            if (string.IsNullOrEmpty(returnUrl))
+            {
+                return page;
+            }
+            return page + "?ReturnUrl=" + HttpUtility.UrlEncode(returnUrl);
+        }
+
         // Only allows return addresses inside this website, so a link cannot send people to another site.
         public static string SafeReturnUrl(string url)
         {

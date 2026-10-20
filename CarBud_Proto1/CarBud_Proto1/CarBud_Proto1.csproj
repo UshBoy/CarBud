@@ -78,6 +78,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="CarDetails.aspx" />
     <Content Include="MyBookings.aspx" />
+    <Content Include="Chat.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +91,16 @@
     </Compile>
     <Compile Include="App_Code\DatabaseHelper.cs" />
     <Compile Include="App_Code\CarManager.cs" />
+    <Compile Include="Chat.aspx.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chat.aspx.designer.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\ChatManager.cs" />
+    <Compile Include="App_Code\OllamaHelper.cs" />
+    <Compile Include="App_Code\CarBudAssistant.cs" />
     <Compile Include="CarDetails.aspx.cs">
       <DependentUpon>CarDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

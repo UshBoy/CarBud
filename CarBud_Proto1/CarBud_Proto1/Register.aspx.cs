@@ -13,6 +13,9 @@ namespace CarBud_Proto1
             {
                 Response.Redirect("Default.aspx");
             }
+
+            // "Log in" keeps the page the visitor should come back to
+            lnkToLogin.NavigateUrl = CurrentUser.WithReturnUrl("Login.aspx", Request.QueryString["ReturnUrl"]);
         }
 
         protected void btnRegister_Click(object sender, EventArgs e)

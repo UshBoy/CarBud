@@ -5,7 +5,7 @@
         <h1>Not sure which car you need?</h1>
         <p>Answer five quick questions and CarBud, our AI assistant, recommends the three cars that suit your trip best, and tells you why.</p>
         <div class="actions">
-            <span class="btn btn-disabled" title="Coming soon">Ask CarBud (coming soon)</span>
+            <a class="btn" href="Chat.aspx">Ask CarBud</a>
             <a class="btn btn-outline" href="Cars.aspx">Browse all cars</a>
         </div>
     </section>

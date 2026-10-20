@@ -9,6 +9,7 @@
 
     <asp:Panel ID="pnlCar" runat="server" CssClass="detail">
         <div class="detail-info">
+            <asp:Panel ID="pnlFromChat" runat="server" Visible="false" CssClass="badge-chat">Recommended for your trip by CarBud</asp:Panel>
             <div class="car-type"><asp:Literal ID="litType" runat="server" /></div>
             <h1><asp:Literal ID="litTitle" runat="server" /></h1>
             <p class="price price-big"><asp:Literal ID="litPrice" runat="server" /> kr <small>/ day</small></p>

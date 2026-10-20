@@ -43,6 +43,6 @@
 
         <asp:Button ID="btnRegister" runat="server" Text="Create account" CssClass="btn btn-full" OnClick="btnRegister_Click" />
 
-        <p class="form-foot">Already have an account? <a href="Login.aspx">Log in</a></p>
+        <p class="form-foot">Already have an account? <asp:HyperLink ID="lnkToLogin" runat="server" NavigateUrl="Login.aspx" Text="Log in" /></p>
     </div>
 </asp:Content>

@@ -13,6 +13,7 @@ namespace CarBud_Proto1
     {
         protected global::System.Web.UI.WebControls.Panel pnlNotFound;
         protected global::System.Web.UI.WebControls.Panel pnlCar;
+        protected global::System.Web.UI.WebControls.Panel pnlFromChat;
         protected global::System.Web.UI.WebControls.Literal litType;
         protected global::System.Web.UI.WebControls.Literal litTitle;
         protected global::System.Web.UI.WebControls.Literal litPrice;

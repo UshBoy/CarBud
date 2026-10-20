@@ -27,5 +27,6 @@ namespace CarBud_Proto1
         protected global::System.Web.UI.WebControls.TextBox txtConfirm;
         protected global::System.Web.UI.WebControls.CompareValidator cvConfirm;
         protected global::System.Web.UI.WebControls.Button btnRegister;
+        protected global::System.Web.UI.WebControls.HyperLink lnkToLogin;
     }
 }

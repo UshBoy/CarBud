@@ -22,6 +22,6 @@
 
         <asp:Button ID="btnLogin" runat="server" Text="Log in" CssClass="btn btn-full" OnClick="btnLogin_Click" />
 
-        <p class="form-foot">New here? <a href="Register.aspx">Create an account</a></p>
+        <p class="form-foot">New here? <asp:HyperLink ID="lnkToRegister" runat="server" NavigateUrl="Register.aspx" Text="Create an account" /></p>
     </div>
 </asp:Content>

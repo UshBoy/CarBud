@@ -17,14 +17,15 @@
                 <nav class="nav">
                     <a href="Default.aspx">Home</a>
                     <a href="Cars.aspx">Cars</a>
+                    <a href="Chat.aspx" class="nav-ask">Ask CarBud</a>
                     <asp:PlaceHolder ID="phLoggedIn" runat="server">
                         <a href="MyBookings.aspx">My bookings</a>
                         <span class="hello">Hi, <asp:Literal ID="litName" runat="server" /></span>
                         <a href="Logout.aspx">Log out</a>
                     </asp:PlaceHolder>
                     <asp:PlaceHolder ID="phLoggedOut" runat="server">
-                        <a href="Login.aspx">Log in</a>
-                        <a class="btn btn-small" href="Register.aspx">Sign up</a>
+                        <asp:HyperLink ID="lnkNavLogin" runat="server" NavigateUrl="Login.aspx" Text="Log in" />
+                        <asp:HyperLink ID="lnkNavRegister" runat="server" NavigateUrl="Register.aspx" CssClass="btn btn-small" Text="Sign up" />
                     </asp:PlaceHolder>
                 </nav>
             </div>

@@ -29,6 +29,9 @@ namespace CarBud_Proto1
 
             ShowCar(car);
 
+            // Did CarBud recommend this car in the visitor's latest chat? Then show a small badge.
+            pnlFromChat.Visible = ChatManager.GetChatSessionForCar(carId).HasValue;
+
             // Logged in: show the booking form. Not logged in: show the "log in to book" box.
             bool loggedIn = CurrentUser.IsLoggedIn;
             pnlBookForm.Visible = loggedIn;
@@ -79,8 +82,11 @@ namespace CarBud_Proto1
                 return;
             }
 
+            // If CarBud recommended this car, link the booking to that chat (for measuring the chatbot)
+            int? chatSessionId = ChatManager.GetChatSessionForCar(carId);
+
             // The database checks the dates, checks the car is free, and works out the price
-            BookingResult result = BookingManager.CreateBooking(CurrentUser.UserID, carId, startDate, endDate, null);
+            BookingResult result = BookingManager.CreateBooking(CurrentUser.UserID, carId, startDate, endDate, chatSessionId);
 
             if (!result.Success)
             {
